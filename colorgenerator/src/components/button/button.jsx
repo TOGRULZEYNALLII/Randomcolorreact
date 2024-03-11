@@ -1,12 +1,12 @@
-import "../button/button.css";
+import "./button.css";
+import React from "react";
 
-function App(props) {
+function Button(props) {
   return (
-    <>
-
-      <button  className="button">{props.text}</button>
-    </>
+    <button onClick={props.onClick} className="button">
+      {props.text}
+    </button>
   );
 }
 
-export default App;
+export default Button;
